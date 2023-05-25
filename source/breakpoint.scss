@@ -1,0 +1,40 @@
+@use 'root';
+
+//mobile breakpoint
+@media screen and (max-width: root.$mobile) {
+    .container {
+        max-width: 90%;
+    }
+    .products {
+        display: block;
+    }
+    
+    .product-item  {
+        margin-bottom: 32px;
+    }
+}
+
+
+//tablet breakpoint
+@media screen and (min-width: root.$mobile) and (max-width: root.$tablet ) {
+    .container {
+        max-width: 90%;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 48.5%);
+        column-gap: 3%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
